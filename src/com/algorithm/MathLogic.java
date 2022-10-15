@@ -12,13 +12,12 @@ public class MathLogic {
             return number * factorialRecursion(number - 1);
         }
     }
-
-    public static int convertToBinary(int number){
+    public static int convertToBinary(int number) {
         StringBuilder binary = new StringBuilder();
 
-        do{
-            binary.append(number%2);
-        }while ((number/=2)>=1);
+        do {
+            binary.append(number % 2);
+        } while ((number /= 2) >= 1);
 
         return Integer.parseInt(binary.reverse().toString());
     }
